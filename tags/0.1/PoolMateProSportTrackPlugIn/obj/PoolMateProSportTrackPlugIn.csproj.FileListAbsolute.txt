@@ -1,0 +1,11 @@
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugIn\bin\Debug\PoolMateProSportTrackPlugIn.dll
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugIn\bin\Debug\PoolMateProSportTrackPlugIn.pdb
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugIn\bin\Debug\NUnit.Framework.dll
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugIn\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugIn\obj\x86\Debug\MarkGravestock.SportTracks.PlugIns.PoolMatePro.Properties.Resources.resources
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugIn\obj\x86\Debug\PoolMateProSportTrackPlugIn.csproj.GenerateResource.Cache
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugIn\obj\x86\Debug\PoolMateProSportTrackPlugIn.dll
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugIn\obj\x86\Debug\PoolMateProSportTrackPlugIn.pdb
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugIn\bin\Debug\FileHelpers.dll
+C:\ProgramData\ZoneFiveSoftware\SportTracks\3\Plugins\Installed\729304BB-539F-4FC1-9008-8DBE4BFB86E9\PoolMateProSportTrackPlugIn.dll
+C:\ProgramData\ZoneFiveSoftware\SportTracks\3\Plugins\Installed\729304BB-539F-4FC1-9008-8DBE4BFB86E9\PoolMateProSportTrackPlugIn.pdb
