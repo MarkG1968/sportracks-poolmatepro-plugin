@@ -1,0 +1,12 @@
+#summary Getting started with this Plug In.
+
+= Introduction =
+
+This plug imports poolmate pro data into SportTracks 3.0. It is currently of 'beta', maybe even 'alpha' quality, so please bear that in mind if you decide to use it.
+
+= Details =
+
+It is developed in C#/.NET 2.0 (bah!!) and there are certain limitation:
+  * It only has English resouces and it will import to an activity called swimming.
+  * It assume that the Pool Mate Pro is set to the local time of the PC that the import is occuring.
+  * Swimming sessions don't necessarily fit so well with the SportTracks activity model.
