@@ -1,0 +1,5 @@
+#summary A watch that records swimming session and can download session data to a PC
+
+= Introduction =
+
+see http://www.swimovate.com/poolmatepro.html for details.
