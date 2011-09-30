@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{2858A175-71E7-42E0-AF72-C0A14C66A549}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MarkGravestock.SportTracks.PlugIns.PoolMatePro</RootNamespace>
+    <AssemblyName>PoolMateProSportTrackPlugInTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <StartupObject>MarkGravestock.SportTracks.PlugIns.PoolMatePro.DeviceConfigurationDialogTest</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Data">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files %28x86%29\Zone Five Software\SportTracks 3\Common.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Visuals">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files %28x86%29\Zone Five Software\SportTracks 3\Common.Visuals.dll</HintPath>
+    </Reference>
+    <Reference Include="NUnit.Framework">
+      <HintPath>$(SharpDevelopBinPath)\Tools\NUnit\NUnit.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeviceConfigurationDialogTest.cs" />
+    <Compile Include="SwimSessionFactoryTest.cs" />
+    <Compile Include="LogFileTest.cs" />
+    <Compile Include="PoolMateProImporterTest.cs" />
+    <Compile Include="PoolMateProSportTrackPlugInTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PoolMateProSportTrackPlugIn\PoolMateProSportTrackPlugIn.csproj">
+      <Project>{A2D58BB9-F121-437A-BA54-04C377C570E0}</Project>
+      <Name>PoolMateProSportTrackPlugIn</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Log1.csv1781149Done">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Log3.csv" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>
