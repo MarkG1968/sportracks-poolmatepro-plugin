@@ -20,7 +20,7 @@ The plug in currently requires packaging into the SportTracks plugin format. A M
 
 = Instructions =
 
-Some brief instructions on how to use the PlugIn to import sessions from the PoolMatePro are in the Instructions page.
+Some brief instructions on how to use the PlugIn to import sessions from the PoolMatePro are in the [Instructions] page.
 
 = Building =
 
