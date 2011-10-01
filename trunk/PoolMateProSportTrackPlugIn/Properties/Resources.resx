@@ -203,4 +203,7 @@
   <data name="DeviceConfigurationDialog_Error_InvalidUserNumber" xml:space="preserve">
     <value>Invalid User Number: Please enter an integer between 1 and 3</value>
   </data>
+  <data name="InvalidImportDirectory" xml:space="preserve">
+    <value>Unable to find any files to import in directory.</value>
+  </data>
 </root>

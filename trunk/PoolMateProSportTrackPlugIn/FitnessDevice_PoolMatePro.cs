@@ -79,7 +79,7 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
 			
 			LogFile logFile = importer.LoadLatestLogFile();
 
-        	directoryValidationEvent.ValidationStatus = ValidationStatus.Invalid;
+			directoryValidationEvent.ValidationStatus = logFile.IsFile ? ValidationStatus.Valid : ValidationStatus.Invalid;
         }
         
 
