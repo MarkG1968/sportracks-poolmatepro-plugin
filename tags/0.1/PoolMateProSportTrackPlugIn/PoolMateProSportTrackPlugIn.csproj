@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="2.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{A2D58BB9-F121-437A-BA54-04C377C570E0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MarkGravestock.SportTracks.PlugIns.PoolMatePro</RootNamespace>
+    <AssemblyName>PoolMateProSportTrackPlugIn</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <StartAction>Program</StartAction>
+    <StartProgram>..\..\..\..\..\..\..\..\Program Files %28x86%29\Zone Five Software\SportTracks 3\SportTracks.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Data">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files %28x86%29\Zone Five Software\SportTracks 3\Common.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Common.Visuals">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files %28x86%29\Zone Five Software\SportTracks 3\Common.Visuals.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FileHelpers">
+      <HintPath>Lib\FileHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="NUnit.Framework">
+      <HintPath>$(SharpDevelopBinPath)\Tools\NUnit\NUnit.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeviceConfigurationDialog.cs" />
+    <Compile Include="DeviceConfigurationDialog.Designer.cs">
+      <DependentUpon>DeviceConfigurationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectoryValidationEvent.cs" />
+    <Compile Include="Domain\Length.cs" />
+    <Compile Include="Domain\LengthCalculator.cs" />
+    <Compile Include="Domain\SwimSession.cs" />
+    <Compile Include="Domain\SwimSessionFactory.cs" />
+    <Compile Include="Domain\SwimSet.cs" />
+    <Compile Include="DeviceConfigurationInfo.cs" />
+    <Compile Include="ExtendFitnessDevices.cs" />
+    <Compile Include="File\Activity.cs" />
+    <Compile Include="File\LengthUnitDescription.cs" />
+    <Compile Include="File\LogEntry.cs" />
+    <Compile Include="File\LogFile.cs" />
+    <Compile Include="File\LengthUnit.cs" />
+    <Compile Include="File\LengthUnitConverter.cs" />
+    <Compile Include="FitnessDevice_PoolMatePro.cs" />
+    <Compile Include="ImportJob_PoolMatePro.cs" />
+    <Compile Include="PlugIn.cs" />
+    <Compile Include="PoolMateProImporter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="ValidateEventHandler.cs" />
+    <Compile Include="ValidationStatus.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain" />
+    <Folder Include="File" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>
