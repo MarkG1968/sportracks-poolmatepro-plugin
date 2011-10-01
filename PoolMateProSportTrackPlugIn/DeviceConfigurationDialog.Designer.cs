@@ -154,6 +154,7 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
             this.cmboUserNumber.Size = new System.Drawing.Size(50, 19);
             this.cmboUserNumber.DropDownStyle = ComboBoxStyle.DropDownList;
             this.cmboUserNumber.TabIndex = 3;
+            this.cmboUserNumber.Enabled = false;
             
             // 
             // labelUserNumber

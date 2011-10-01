@@ -29,6 +29,8 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
 			dialog.ConfigurationInfo = DeviceConfigurationInfo.Default;
 			dialog.ValidateEventHandler  += new ValidateEventHandler(new FitnessDevice_PoolMatePro().ValidateImportDirectory);
 			dialog.ShowDialog();
+			
+			MessageBox.Show("Device Configuration Settings: " + dialog.ConfigurationInfo, "Results", MessageBoxButtons.OK);
 		}
 	}
 }

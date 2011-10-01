@@ -149,6 +149,15 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro.Properties {
 		}
 		
 		/// <summary>
+		///   Looks up a localized string similar to Unable to find any files to import in directory..
+		/// </summary>
+		internal static string InvalidImportDirectory {
+			get {
+				return ResourceManager.GetString("InvalidImportDirectory", resourceCulture);
+			}
+		}
+		
+		/// <summary>
 		///   Looks up a localized string similar to Efficiency: {0} Strokes: {1}.
 		/// </summary>
 		internal static string LapDescription {

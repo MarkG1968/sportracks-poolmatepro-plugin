@@ -30,7 +30,7 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
         	btnDirectoryChooser.Text = Properties.Resources.DeviceConfigurationDlg_btnDirectoryChooser_Text;
         	labelUserNumber.Text = Properties.Resources.DeviceConfigurationDlg_labelUserNumber_Text;
         	
-        	cmboUserNumber.Items.AddRange(new object[] {1,2,3});
+        	cmboUserNumber.Items.AddRange(new object[] {"1","2","3"});
         	
             btnOk.Text = CommonResources.Text.ActionOk;
             btnCancel.Text = CommonResources.Text.ActionCancel;
@@ -54,15 +54,14 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
                 DeviceConfigurationInfo configInfo = DeviceConfigurationInfo.Parse(null);
                 configInfo.ImportOnlyNew = chkImportOnlyNew.Checked;
                 configInfo.FileLocation = txtImportDirectory.Text;
-                Int64.TryParse(cmboUserNumber.Items[cmboUserNumber.SelectedIndex].ToString(), out configInfo.UserNumber);
+                Int64.TryParse(cmboUserNumber.SelectedItem.ToString(), out configInfo.UserNumber);
                 return configInfo;
             }
             set
             {
                 chkImportOnlyNew.Checked = value.ImportOnlyNew;
                 txtImportDirectory.Text = value.FileLocation;
-                int userNumberIndex = cmboUserNumber.FindString(value.UserNumber.ToString());
-                cmboUserNumber.SelectedValue = value.UserNumber;
+                cmboUserNumber.SelectedItem = value.UserNumber.ToString();
                 userNumber = value.UserNumber;
             }
         }
@@ -83,6 +82,9 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
+            
+            //This method is marked as obsolete, but the overload that takes an autoscale parameter
+            //is private.
             MessageDialog.DrawButtonRowBackground(e.Graphics, ClientRectangle, theme);
         }
 
@@ -95,18 +97,16 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
         	
         	if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
         	{
-        		if (IsImportDirectoryValid())
+	        	txtImportDirectory.Text = folderBrowserDialog.SelectedPath;
+
+	        	if (IsImportDirectoryValid())
         		{
         			importDirectoryErrorProvider.SetError(txtImportDirectory, String.Empty);
-        			btnOk.Enabled = true;
         		}
         		else
         		{
-        			importDirectoryErrorProvider.SetError(txtImportDirectory, "Invalid Dir");
-        			btnOk.Enabled = false;
+        			importDirectoryErrorProvider.SetError(txtImportDirectory, Properties.Resources.InvalidImportDirectory);
         		}
-        		
-	        	txtImportDirectory.Text = folderBrowserDialog.SelectedPath;
         	}
         }
 
