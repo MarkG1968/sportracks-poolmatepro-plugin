@@ -1,0 +1,12 @@
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\bin\Debug\PoolMateProSportTrackPlugInTest.pdb
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\obj\x86\Debug\PoolMateProSportTrackPlugInTest.pdb
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\bin\Debug\NUnit.Framework.dll
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\bin\Debug\PoolMateProSportTrackPlugIn.dll
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\bin\Debug\PoolMateProSportTrackPlugIn.pdb
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\bin\Debug\FileHelpers.dll
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\bin\Debug\Data\Log1.csv1781149Done
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\bin\Debug\PoolMateProSportTrackPlugInTest.exe
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\obj\x86\Debug\PoolMateProSportTrackPlugInTest.exe
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\bin\Debug\Common.Data.dll
+C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugInTest\bin\Debug\Common.Visuals.dll
