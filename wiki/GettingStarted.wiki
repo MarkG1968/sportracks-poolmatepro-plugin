@@ -18,6 +18,10 @@ There are certain limitation:
 
 The plug in currently requires packaging into the SportTracks plugin format. A ManualInstallation can be performed instead.
 
+= Instructions =
+
+Some brief instructions on how to use the PlugIn to import sessions from the PoolMatePro are in the Instructions page.
+
 = Building =
 
 The projects have been developed using SharpDevelop and have also been built using MSBuild using version 2.0 of the .NET Framework.
