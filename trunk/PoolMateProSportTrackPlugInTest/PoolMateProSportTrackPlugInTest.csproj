@@ -33,13 +33,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Common.Data">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files %28x86%29\Zone Five Software\SportTracks 3\Common.Data.dll</HintPath>
+      <HintPath>..\PoolMateProSportTrackPlugIn\Lib\Common.Data.dll</HintPath>
     </Reference>
     <Reference Include="Common.Visuals">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files %28x86%29\Zone Five Software\SportTracks 3\Common.Visuals.dll</HintPath>
+      <HintPath>..\PoolMateProSportTrackPlugIn\Lib\Common.Visuals.dll</HintPath>
     </Reference>
-    <Reference Include="NUnit.Framework">
-      <HintPath>$(SharpDevelopBinPath)\Tools\NUnit\NUnit.Framework.dll</HintPath>
+    <Reference Include="nunit.framework">
+      <HintPath>Lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
