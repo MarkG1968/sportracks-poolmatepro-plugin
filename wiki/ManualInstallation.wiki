@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This plugin will need to be manually installed at present into SportsTracks.
+This plugin will need to be manually installed at present into SportTracks.
 
 = Details =
 
