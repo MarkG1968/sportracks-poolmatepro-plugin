@@ -1,0 +1,12 @@
+#summary How to install this plug in into SportTracks before it is packaged.
+
+= Introduction =
+
+This plugin will need to be manually installed at present into SportsTracks.
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
