@@ -43,12 +43,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Common.Data">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files %28x86%29\Zone Five Software\SportTracks 3\Common.Data.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>Lib\Common.Data.dll</HintPath>
     </Reference>
     <Reference Include="Common.Visuals">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files %28x86%29\Zone Five Software\SportTracks 3\Common.Visuals.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>Lib\Common.Visuals.dll</HintPath>
     </Reference>
     <Reference Include="FileHelpers">
       <HintPath>Lib\FileHelpers.dll</HintPath>
