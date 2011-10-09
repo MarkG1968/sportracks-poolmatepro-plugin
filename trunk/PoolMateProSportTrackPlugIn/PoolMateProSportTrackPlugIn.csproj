@@ -99,6 +99,11 @@
   <ItemGroup>
     <Folder Include="Domain" />
     <Folder Include="File" />
+    <Folder Include="Package" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\package.xml" />
+    <None Include="Package\plug-in.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
 </Project>
