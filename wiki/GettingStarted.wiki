@@ -2,7 +2,11 @@
 
 = Introduction =
 
-This plug imports poolmate pro data into SportTracks 3.0. It is currently of 'beta' quality, so please bear that in mind if you decide to use it, and please backup your training log.
+This plug imports poolmate pro data into SportTracks 3.0.
+
+It will import each session into its own activity, and each set recorded by the PoolMatePro into a new lap. Fields that currently don't have a direct mapping are imported into the notes fields of the activity or the  lap (this will probably be enhanced in later versions to use custom fields.) 
+
+It is currently of 'beta' quality, so please bear that in mind if you decide to use it, and please backup your training log.
 
 = Details =
 
