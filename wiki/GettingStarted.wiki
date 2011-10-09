@@ -14,7 +14,7 @@ There are certain limitation:
 
 = Installation =
 
-The plug in is packaged into the SportTracks plugin format an is availble from the downloads section of this site. 
+The plug in is packaged into the SportTracks plugin format an is available from the downloads section of this site. 
 
 A ManualInstallation can also be performed.
 
