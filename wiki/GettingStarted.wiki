@@ -6,8 +6,6 @@ This plug imports poolmate pro data into SportTracks 3.0. It is currently of 'be
 
 = Details =
 
-It is developed in C#/.NET 2.0 using the Sharp Develop IDE (Version 4.1) on WIndows 7. The solution should build using MSBuild.
-
 There are certain limitation:
   * It only has English resouces and it will import to an activity called swimming.
   * It assumes that the Pool Mate Pro is set to the local time of the PC that is running SportTracks. This needs to be tested further with different time zones.
@@ -24,6 +22,14 @@ A ManualInstallation can also be performed.
 
 Some brief instructions on how to use the PlugIn to import sessions from the PoolMatePro are in the [Instructions] page.
 
-= Building =
+= Develpment Details =
+
+It is developed in C#/.NET 2.0 using the Sharp Develop IDE (Version 4.1) on WIndows 7. The solution should build using MSBuild.
+
+== Building ==
 
 The projects have been developed using SharpDevelop and have also been built using MSBuild using version 2.0 of the .NET Framework.
+
+== Packaging as a PlugIn ==
+
+There is an MSBuild file in the Package subdirectory of the project, which contains a package target to build the plug in file.
