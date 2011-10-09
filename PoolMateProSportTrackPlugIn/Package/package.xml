@@ -12,7 +12,8 @@
   </PropertyGroup>  
 	
   <ItemGroup>
-      	<ZipFiles Include="$(OutputDirectory)\\*.dll" Exclude="$(OutputDirectory)\\NUnit.Framework.dll" />
+      	<ZipFiles Include="$(OutputDirectory)\\PoolMateProSportTrackPlugIn.dll" />
+      	<ZipFiles Include="$(OutputDirectory)\\FileHelpers.dll" />
       	<ZipFiles Include="plugin.xml" />
    </ItemGroup>
     
