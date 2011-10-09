@@ -22,7 +22,7 @@ A ManualInstallation can also be performed.
 
 Some brief instructions on how to use the PlugIn to import sessions from the PoolMatePro are in the [Instructions] page.
 
-= Develpment Details =
+= Development Details =
 
 It is developed in C#/.NET 2.0 using the Sharp Develop IDE (Version 4.1) on WIndows 7. The solution should build using MSBuild.
 
