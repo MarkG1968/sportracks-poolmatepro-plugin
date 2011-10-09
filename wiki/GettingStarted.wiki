@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This plug imports poolmate pro data into SportTracks 3.0. It is currently of 'beta', maybe even 'alpha' quality, so please bear that in mind if you decide to use it, and please backup your training log.
+This plug imports poolmate pro data into SportTracks 3.0. It is currently of 'beta' quality, so please bear that in mind if you decide to use it, and please backup your training log.
 
 = Details =
 
