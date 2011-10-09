@@ -16,7 +16,9 @@ There are certain limitation:
 
 = Installation =
 
-The plug in currently requires packaging into the SportTracks plugin format. A ManualInstallation can be performed instead.
+The plug in is packaged into the SportTracks plugin format an is availble from the downloads section of this site. 
+
+A ManualInstallation can also be performed.
 
 = Instructions =
 
