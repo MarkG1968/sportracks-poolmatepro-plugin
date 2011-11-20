@@ -19,7 +19,6 @@
     <SignAssembly>False</SignAssembly>
     <DelaySign>False</DelaySign>
     <SourceAnalysisOverrideSettingsFile>C:\Users\Mark Gravestock\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
-    <OutputPath>bin\Debug</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -29,7 +28,6 @@
     <FileAlignment>4096</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <OutputPath>C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugIn\bin\Debug</OutputPath>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>Full</DebugType>
     <Optimize>False</Optimize>
@@ -37,14 +35,15 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <StartAction>Program</StartAction>
     <StartProgram>..\..\..\..\..\..\..\..\Program Files %28x86%29\Zone Five Software\SportTracks 3\SportTracks.exe</StartProgram>
+    <OutputPath>bin\Debug</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <OutputPath>bin\Release\</OutputPath>
     <DebugSymbols>False</DebugSymbols>
     <DebugType>None</DebugType>
     <Optimize>True</Optimize>
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
     <DefineConstants>TRACE</DefineConstants>
+    <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Common.Data">
