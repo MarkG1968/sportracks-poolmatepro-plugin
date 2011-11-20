@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+	<!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,67 +59,67 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Image_48_PoolMatePro" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+	<data name="Image_48_PoolMatePro" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
         /9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcI
         CQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwM
         DAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAwADADASIAAhEBAxEB/8QA
@@ -157,53 +157,56 @@
         Wel6Zaw2Wn6dAltawRDCQxIoVFHsAK/H/wD4Ihf8EGvFPwP/AGtp/j98Y7GDTJvDds1h4D8Mvtln0/fG
         YmvLjBKxusbSKickvNJIdpVM/sauNox0qrAf/9k=
 </value>
-  </data>
-  <data name="ImportComplete" xml:space="preserve">
+	</data>
+	<data name="ImportComplete" xml:space="preserve">
     <value>Import Complete</value>
   </data>
-  <data name="SwimmingActivityName" xml:space="preserve">
+	<data name="SwimmingActivityName" xml:space="preserve">
     <value>Swimming</value>
   </data>
-  <data name="NothingToImport" xml:space="preserve">
+	<data name="NothingToImport" xml:space="preserve">
     <value>No files found to import.</value>
   </data>
-  <data name="DeviceConfigurationDlg_chkImportOnlyNew_Text" xml:space="preserve">
+	<data name="DeviceConfigurationDlg_chkImportOnlyNew_Text" xml:space="preserve">
     <value>Only Import New Sessions.</value>
   </data>
-  <data name="DeviceConfigurationDlg_labelImportDirectory_Text" xml:space="preserve">
+	<data name="DeviceConfigurationDlg_labelImportDirectory_Text" xml:space="preserve">
     <value>Pool Mate Directory:</value>
   </data>
-  <data name="ImportStarting" xml:space="preserve">
+	<data name="ImportStarting" xml:space="preserve">
     <value>Import Starting.</value>
   </data>
-  <data name="ActivityDescription" xml:space="preserve">
+	<data name="ActivityDescription" xml:space="preserve">
     <value>Pool Length: {0}</value>
   </data>
-  <data name="LapDescription" xml:space="preserve">
+	<data name="LapDescription" xml:space="preserve">
     <value>Efficiency: {0} Strokes: {1}</value>
   </data>
-  <data name="LengthUnitMetres" xml:space="preserve">
+	<data name="LengthUnitMetres" xml:space="preserve">
     <value>Metres</value>
   </data>
-  <data name="LengthUnitYards" xml:space="preserve">
+	<data name="LengthUnitYards" xml:space="preserve">
     <value>Yards</value>
   </data>
-  <data name="UnknownValue" xml:space="preserve">
-    <value>&lt;Unknown&gt;</value>
+	<data name="UnknownValue" xml:space="preserve">
+    <value>&lt;Unknown Value&gt;</value>
   </data>
-  <data name="DeviceConfigurationDialog_folderBrowserDialog_Description" xml:space="preserve">
+	<data name="DeviceConfigurationDialog_folderBrowserDialog_Description" xml:space="preserve">
     <value>Select the directory that contains the files imported using the PoolMate Link.</value>
   </data>
-  <data name="DeviceConfigurationDlg_labelUserNumber_Text" xml:space="preserve">
+	<data name="DeviceConfigurationDlg_labelUserNumber_Text" xml:space="preserve">
     <value>User Number</value>
   </data>
-  <data name="DeviceConfigurationDlg_btnDirectoryChooser_Text" xml:space="preserve">
+	<data name="DeviceConfigurationDlg_btnDirectoryChooser_Text" xml:space="preserve">
     <value>Directory ...</value>
   </data>
-  <data name="DeviceConfigurationDialog_Error_InvalidUserNumber" xml:space="preserve">
+	<data name="DeviceConfigurationDialog_Error_InvalidUserNumber" xml:space="preserve">
     <value>Invalid User Number: Please enter an integer between 1 and 3</value>
   </data>
-  <data name="InvalidImportDirectory" xml:space="preserve">
+	<data name="InvalidImportDirectory" xml:space="preserve">
     <value>Unable to find any files to import in directory.</value>
+  </data>
+	<data name="NoLogbookAvailable" xml:space="preserve">
+    <value>No Logbook is open to import Swimming sessions into.</value>
   </data>
 </root>

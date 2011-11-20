@@ -8,8 +8,12 @@
 */
 using System;
 using System.IO;
+using System.Globalization;
 using System.Collections.Generic;
+
 using FileHelpers;
+
+using MarkGravestock.SportTracks.PlugIns.PoolMatePro.Utilities;
 
 namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro.File
 {
@@ -30,7 +34,11 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro.File
 			FileHelperEngine<LogEntry> engine = new FileHelperEngine<LogEntry>();
 			engine.Options.IgnoreFirstLines = 1;
 			engine.ErrorManager.ErrorMode = ErrorMode.SaveAndContinue;
-			return engine.ReadFile(logFileInfo.FullName);
+
+			using(new ScopedLocaleSwitcher(CultureInfo.GetCultureInfoByIetfLanguageTag("en-GB")))
+			{
+				return engine.ReadFile(logFileInfo.FullName);
+			}
 		}
 		
 		public bool IsFile

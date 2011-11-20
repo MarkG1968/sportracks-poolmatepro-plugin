@@ -11,10 +11,13 @@
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <NoStdLib>False</NoStdLib>
     <WarningLevel>4</WarningLevel>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -24,7 +27,7 @@
     <FileAlignment>4096</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>C:\Users\Mark Gravestock\Documents\Development\DotNet\SharpDevelop Projects\TestSportTracksPlugIn\PoolMateProSportTrackPlugIn\bin\Debug</OutputPath>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>Full</DebugType>
     <Optimize>False</Optimize>
@@ -44,15 +47,14 @@
   <ItemGroup>
     <Reference Include="Common.Data">
       <HintPath>Lib\Common.Data.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Common.Visuals">
       <HintPath>Lib\Common.Visuals.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="FileHelpers">
       <HintPath>Lib\FileHelpers.dll</HintPath>
-    </Reference>
-    <Reference Include="NUnit.Framework">
-      <HintPath>$(SharpDevelopBinPath)\Tools\NUnit\NUnit.Framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
@@ -60,17 +62,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DeviceConfigurationDialog.cs" />
-    <Compile Include="DeviceConfigurationDialog.Designer.cs">
+    <Compile Include="ActivityCategoryFinder.cs" />
+    <Compile Include="Configuration\DeviceConfigurationDialog.cs" />
+    <Compile Include="Configuration\DeviceConfigurationDialog.Designer.cs">
       <DependentUpon>DeviceConfigurationDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="DirectoryValidationEvent.cs" />
+    <Compile Include="Configuration\DeviceConfigurationInfo.cs" />
+    <Compile Include="Configuration\Directory\DirectoryValidateEventHandler.cs" />
+    <Compile Include="Configuration\Directory\DirectoryValidationEvent.cs" />
+    <Compile Include="Configuration\Directory\DirectoryValidationStatus.cs" />
+    <Compile Include="Domain\AlreadyImportedSwimSessionFilter.cs" />
+    <Compile Include="Domain\ISwimSessionFilter.cs" />
     <Compile Include="Domain\Length.cs" />
     <Compile Include="Domain\LengthCalculator.cs" />
     <Compile Include="Domain\SwimSession.cs" />
     <Compile Include="Domain\SwimSessionFactory.cs" />
+    <Compile Include="Domain\SwimSessionFilters.cs" />
     <Compile Include="Domain\SwimSet.cs" />
-    <Compile Include="DeviceConfigurationInfo.cs" />
     <Compile Include="ExtendFitnessDevices.cs" />
     <Compile Include="File\Activity.cs" />
     <Compile Include="File\LengthUnitDescription.cs" />
@@ -78,32 +86,41 @@
     <Compile Include="File\LogFile.cs" />
     <Compile Include="File\LengthUnit.cs" />
     <Compile Include="File\LengthUnitConverter.cs" />
+    <Compile Include="File\LogFileReader.cs" />
     <Compile Include="FitnessDevice_PoolMatePro.cs" />
+    <Compile Include="IActivityFactory.cs" />
+    <Compile Include="Importer.cs" />
     <Compile Include="ImportJob_PoolMatePro.cs" />
+    <Compile Include="ImportResultAdapter.cs" />
     <Compile Include="PlugIn.cs" />
-    <Compile Include="PoolMateProImporter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\IResources.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <DependentUpon>Resources.resx</DependentUpon>
       <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="ValidateEventHandler.cs" />
-    <Compile Include="ValidationStatus.cs" />
+    <Compile Include="Properties\ResourcesAdapter.cs" />
+    <Compile Include="SwimSessionToActivityConvertor.cs" />
+    <Compile Include="Utilities\ScopedLocaleSwitcher.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.de.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Configuration\Directory" />
     <Folder Include="Domain" />
     <Folder Include="File" />
+    <Folder Include="Configuration" />
+    <Folder Include="Utilities" />
     <Folder Include="Package" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Package\package.xml" />
-    <None Include="Package\plug-in.xml" />
+    <None Include="Package\plugin.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
 </Project>
