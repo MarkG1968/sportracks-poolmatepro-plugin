@@ -77,7 +77,6 @@
     <Folder Include="Data" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="Data\Log1.csv1781149Done">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
