@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>  
+  
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
+  <!-- Required Import to use MSBuild Community Tasks -->  
+    <UsingTask AssemblyFile="$(MSBuildCommunityTasksLib)" TaskName="MSBuild.Community.Tasks.Zip" />
+  
+  <PropertyGroup>  
+    <!-- (...other properties...) -->  
+  	<MSBuildCommunityTasksLib>..\\Tool\\MSBuild.Community.Tasks.dll</MSBuildCommunityTasksLib>
+    <OutputDirectory>..\\bin\\Debug</OutputDirectory>  
+    <ZipFilename>PoolMateProImport.st3plugin</ZipFilename>  
+  </PropertyGroup>  
+	
+  <ItemGroup>
+      	<ZipFiles Include="$(OutputDirectory)\\PoolMateProSportTrackPlugIn.dll" />
+      	<ZipFiles Include="$(OutputDirectory)\\FileHelpers.dll" />
+      	<ZipFiles Include="$(OutputDirectory)\\de\\*" />
+      	<ZipFiles Include="plugin.xml" />
+   </ItemGroup>
+    
+  <Target Name="Package" DependsOnTargets="Clean">
+    <Zip Files="@(ZipFiles)" ZipFileName="Output\\$(ZipFilename)"  
+         WorkingDirectory="$(OutputDirectory)" />  
+  </Target>  
+	
+ <Target Name="Clean">
+	<Delete Files="$(ZipFilename)" />
+  </Target>  
+  
+</Project>  

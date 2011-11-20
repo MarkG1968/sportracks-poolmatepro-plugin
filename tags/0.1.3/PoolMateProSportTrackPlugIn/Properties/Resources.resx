@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+	<data name="Image_48_PoolMatePro" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>
+        /9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcI
+        CQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwM
+        DAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAwADADASIAAhEBAxEB/8QA
+        HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIh
+        MUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVW
+        V1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+        x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQF
+        BgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAV
+        YnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+        hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq
+        8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9/K4L9pP9p/wD+x/8JdR8dfErxRpvhHwrpeBNfXhY73bO2KKN
+        A0k0rYO2KNWdiOFNdJ8RfiBo3wo8A634o8R6naaL4f8ADtjNqep6hdPsgsbaFDJLK57KqKxPsK/mV/aY
+        8VfGL/g4l/aJ1n4mX+pW/wAOP2d/Bd7LpvhyfxBeJZ6ZpUJYAthmCSX0w2NM4Y7CyxhiIwtJsaR9P/tg
+        /wDB4vqV5rtxpfwG+G1lb6ZCxRNf8aFpZ7vsTHY28iiIA8q0k7E5G6JCCK+L4v8Ag4M/a/8AEniZdTn+
+        MmsxuszSRQWuk6bBbQAk/J5K2wR1HQeaGPHPPNbEf/BKH4V+ENTuEm+OfwWvLSJwsE0niu1e5dQBuZ1V
+        wilj90AMSM5xjng9e/ZH8O6Brrx+Hte0LxBZxMFZ9J1WHUoOTxhkJZGJ6K4G7tjGDnJ2td7glfY+6P8A
+        gl5/wcofFmb9rbwZ8M/jE1v8QPDvxL1Cy0jTNdaK10++0e6uJxBuK28KRSxB3XcjAOBhg/SNv3wGcDPW
+        v47/AI1/AfV/hlf6Jqeh3V7Z3SXsF/ot/ZsVm0++Uq0Mkbg5G5gvI77GHKiv6wf2J/FmreOv2PvhZrHi
+        C5a81/UvCWl3GqTtMJmmu2tI/PZnHDMZN5J9c1on0EfEP/B178TL/wAJ/wDBKGbwlpsUb3XxZ8aaJ4RW
+        Rv8AlhmZ78MO3LWAXns5r8/v+Cp/wzi+BXgv4X/CrQ45LTwd4Egmg0i3KbILkpbWSPdEDmSRpWuWLnnf
+        LKMjLCv0T/4OkfhXc+P/APglzLr1g0g1L4a+MdG8VWahGZWlSV7UbiBhFAuyxZsD5cZyRX51f8FTddvv
+        jx8OPh38WNKaW/8ABni+2lexmjd2GltJHaZtZcgCJxJHc/LnBaOT+IMKyxDapuxUN0fHNhoPkODJsYhd
+        uMbsep6Dqf512X7JvgEa9+0p4esr6K9ubK/ivYbqDT4nnuJ0FjcNhI+pbeiOBwAyAkgDI8wliJBfY8i3
+        DyKUjgwUjPJcYyVzjGDnOc+1fRX/AAS18Gan44/bD8LwWzatp9rpOn6hfXd3aqouNPj+xTRLJl0YDMs0
+        S/MpB34IOcVw0k3K9zpk7K6OQ/a68Rr4RsbrwhqJVZ4IHc8MhjmSaWFyucEbniLjpjfjjGK/df8A4N1P
+        iVJ8SP8Agk78PRcM8l3oU+oaVPK7lmmK3ckisSed2yVMnuQT1Nfz0f8ABTv4j2XxF/bs8TaXoUq3Fpoc
+        o0Z3hbesl0JZJblVIzu2TzSRZGcmPIJzX9Gv/BBz4D3v7Pn/AATI8BaTqlrNY6vqL3ep3trPEYprWSS4
+        dRHIjAMkipGgZWAZWDKQCDXowVkcrd2fWPjHwlpvj7wnqehazY2+p6PrVrLY31nOoaK6glQpJG4PVWRm
+        BHoa/ns/apk+Kv8Awb5/G7xN4Tt9LPjr4FeNWub/AMLvqqmW23lOI3kX7lxEwjE69JkQSBFeTzE/olrj
+        /jt8AvBv7TXwy1Hwd498O6b4p8Naqm24sb2PchP8MiMMNHIp5WRGV1PKsCAasR/IprP/AAU2+L+o6+NW
+        v/FHgnUZ3YNJp958O9CezYEtlNrWZbH3cfxHJ+YEZb3b4nf8F6JLH9mK28J/Cf4b+H/ht478QWQj8U+I
+        NJsILK0tpgWUtp0EYLbmU7llnbdCWYIrMFlH2Z+2t/waJ31jfalqPwM8YWeoaLcF5IPDniNxb3mnArzH
+        b3aqY5l3H5UlSLYBgyPxj5Et/wDg3D/aY8KXMD6x8KNSlaIjzDp+paddxyYPJXy7hiAeuCMjOOetSopO
+        4XPkH9mj4T6h4r+JvgnR7a0XUfEnjvxDZ6NoFhMXIuria6jjEsuGD+SpcbiGUtzhhhmX+0Twz4bsfCGg
+        Wel6Zaw2Wn6dAltawRDCQxIoVFHsAK/H/wD4Ihf8EGvFPwP/AGtp/j98Y7GDTJvDds1h4D8Mvtln0/fG
+        YmvLjBKxusbSKickvNJIdpVM/sauNox0qrAf/9k=
+</value>
+	</data>
+	<data name="ImportComplete" xml:space="preserve">
+    <value>Import Complete</value>
+  </data>
+	<data name="SwimmingActivityName" xml:space="preserve">
+    <value>Swimming</value>
+  </data>
+	<data name="NothingToImport" xml:space="preserve">
+    <value>No files found to import.</value>
+  </data>
+	<data name="DeviceConfigurationDlg_chkImportOnlyNew_Text" xml:space="preserve">
+    <value>Only Import New Sessions.</value>
+  </data>
+	<data name="DeviceConfigurationDlg_labelImportDirectory_Text" xml:space="preserve">
+    <value>Pool Mate Directory:</value>
+  </data>
+	<data name="ImportStarting" xml:space="preserve">
+    <value>Import Starting.</value>
+  </data>
+	<data name="ActivityDescription" xml:space="preserve">
+    <value>Pool Length: {0}</value>
+  </data>
+	<data name="LapDescription" xml:space="preserve">
+    <value>Efficiency: {0} Strokes: {1}</value>
+  </data>
+	<data name="LengthUnitMetres" xml:space="preserve">
+    <value>Metres</value>
+  </data>
+	<data name="LengthUnitYards" xml:space="preserve">
+    <value>Yards</value>
+  </data>
+	<data name="UnknownValue" xml:space="preserve">
+    <value>&lt;Unknown Value&gt;</value>
+  </data>
+	<data name="DeviceConfigurationDialog_folderBrowserDialog_Description" xml:space="preserve">
+    <value>Select the directory that contains the files imported using the PoolMate Link.</value>
+  </data>
+	<data name="DeviceConfigurationDlg_labelUserNumber_Text" xml:space="preserve">
+    <value>User Number</value>
+  </data>
+	<data name="DeviceConfigurationDlg_btnDirectoryChooser_Text" xml:space="preserve">
+    <value>Directory ...</value>
+  </data>
+	<data name="DeviceConfigurationDialog_Error_InvalidUserNumber" xml:space="preserve">
+    <value>Invalid User Number: Please enter an integer between 1 and 3</value>
+  </data>
+	<data name="InvalidImportDirectory" xml:space="preserve">
+    <value>Unable to find any files to import in directory.</value>
+  </data>
+	<data name="NoLogbookAvailable" xml:space="preserve">
+    <value>No Logbook is open to import Swimming sessions into.</value>
+  </data>
+</root>
