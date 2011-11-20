@@ -1,0 +1,5 @@
+#summary This section contains details of how the data that is recorded by the PoolMatePro is mapped to a SportTracks activity by the plug-in.
+
+= Introduction =
+
+Content will be added here.
