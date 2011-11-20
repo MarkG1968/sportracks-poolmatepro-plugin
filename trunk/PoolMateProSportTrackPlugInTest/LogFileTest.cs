@@ -9,9 +9,11 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Globalization;
 using NUnit.Framework;
 
 using MarkGravestock.SportTracks.PlugIns.PoolMatePro.File;
+using MarkGravestock.SportTracks.PlugIns.PoolMatePro.Utilities;
 
 namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
 {
@@ -42,6 +44,19 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
 			
 			Assert.That(subjectUnderTest.IsFile, Is.False);
 		}
-
+		
+		[Test, Combinatorial]
+		public void CanGetAllEntriesUnderNonEnglishLocale([Values("de-DE", "fr-CA", "nl")]String ietfLanguageTag)
+		{
+			LogFile subjectUnderTest = new LogFile(TestData.TestPoolMateProFile);
+			IList<LogEntry> allEntries = new List<LogEntry>();
+				
+			using(new ScopedLocaleSwitcher(CultureInfo.GetCultureInfoByIetfLanguageTag(ietfLanguageTag)))
+			{
+				allEntries = subjectUnderTest.GetAllEntries();
+			}
+			
+			Assert.That(allEntries.Count, Is.EqualTo(168));
+		}		
 	}
 }

@@ -1,0 +1,159 @@
+﻿/*
+ * Created by SharpDevelop.
+ * User: Mark Gravestock
+ * Date: 22/09/2011
+ * Time: 21:53
+ * 
+*/
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.ComponentModel;
+using System.IO;
+
+using ZoneFiveSoftware.Common.Visuals;
+
+using MarkGravestock.SportTracks.PlugIns.PoolMatePro.Configuration.Directory;
+
+namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro.Configuration
+{
+	/// <summary>
+	/// Description of DeviceConfigurationDialog.
+	/// </summary>
+	public partial class DeviceConfigurationDialog : Form
+	{
+        public DeviceConfigurationDialog()
+        {
+            InitializeComponent();
+
+            Text = CommonResources.Text.Devices.ConfigurationDialog_Title;
+            chkImportOnlyNew.Text = Properties.Resources.DeviceConfigurationDlg_chkImportOnlyNew_Text;
+            labelImportDirectory.Text = Properties.Resources.DeviceConfigurationDlg_labelImportDirectory_Text;
+        	btnDirectoryChooser.Text = Properties.Resources.DeviceConfigurationDlg_btnDirectoryChooser_Text;
+        	labelUserNumber.Text = Properties.Resources.DeviceConfigurationDlg_labelUserNumber_Text;
+        	
+        	cmboUserNumber.Items.AddRange(new object[] {"1","2","3"});
+        	
+            btnOk.Text = CommonResources.Text.ActionOk;
+            btnCancel.Text = CommonResources.Text.ActionCancel;
+
+            if (PlugIn.Instance != null && PlugIn.Instance.Application != null)
+            {
+                ThemeChanged(PlugIn.Instance.Application.VisualTheme);
+            }
+
+            btnDirectoryChooser.Click += new EventHandler(btnDirectoryChooser_Click);
+            btnOk.Click += new EventHandler(btnOk_Click);
+            btnCancel.Click += new EventHandler(btnCancel_Click);
+        }
+
+        #region Public properties
+
+        public DeviceConfigurationInfo ConfigurationInfo
+        {
+            get
+            {
+                DeviceConfigurationInfo configInfo = DeviceConfigurationInfo.Parse(null);
+                configInfo.ImportOnlyNew = chkImportOnlyNew.Checked;
+                configInfo.FileLocation = txtImportDirectory.Text;
+                Int64.TryParse(cmboUserNumber.SelectedItem.ToString(), out configInfo.UserNumber);
+                return configInfo;
+            }
+            set
+            {
+                chkImportOnlyNew.Checked = value.ImportOnlyNew;
+                txtImportDirectory.Text = value.FileLocation;
+                cmboUserNumber.SelectedItem = value.UserNumber.ToString();
+                userNumber = value.UserNumber;
+            }
+        }
+        #endregion
+
+        #region Public methods
+        public void ThemeChanged(ITheme visualTheme)
+        {
+            theme = visualTheme;
+            labelImportDirectory.ForeColor = visualTheme.ControlText;
+            txtImportDirectory.ThemeChanged(visualTheme);
+            chkImportOnlyNew.ForeColor = visualTheme.ControlText;
+            BackColor = visualTheme.Control;
+        }
+        #endregion
+
+        #region Event handlers
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            
+            //This method is marked as obsolete, but the overload that takes an autoscale parameter
+            //is private.
+            MessageDialog.DrawButtonRowBackground(e.Graphics, ClientRectangle, theme);
+        }
+
+        void btnDirectoryChooser_Click(object sender, EventArgs e)
+        {
+        	FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+        	folderBrowserDialog.Description = Properties.Resources.DeviceConfigurationDialog_folderBrowserDialog_Description;
+	        folderBrowserDialog.ShowNewFolderButton = false;
+        	folderBrowserDialog.RootFolder = System.Environment.SpecialFolder.MyComputer;
+        	
+        	if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+        	{
+	        	txtImportDirectory.Text = folderBrowserDialog.SelectedPath;
+
+	        	if (IsImportDirectoryValid())
+        		{
+        			importDirectoryErrorProvider.SetError(txtImportDirectory, String.Empty);
+        		}
+        		else
+        		{
+        			importDirectoryErrorProvider.SetError(txtImportDirectory, Properties.Resources.InvalidImportDirectory);
+        		}
+        	}
+        }
+
+        bool IsImportDirectoryValid()
+        {
+        	DirectoryValidationEvent args = new DirectoryValidationEvent(new DirectoryInfo(txtImportDirectory.Text));
+        	
+        	if (DirectoryValidateEventHandler != null)
+        	{
+        		DirectoryValidateEventHandler(args);
+        		
+        		if (args.ValidationStatus == DirectoryValidationStatus.Invalid)
+        		{
+        			return false;
+        		}
+        	}
+        	
+        	return true;
+        }
+        
+
+        void btnOk_Click(object sender, EventArgs e)
+        {
+            DialogResult = btnOk.DialogResult;
+            Close();
+        }
+
+        void btnCancel_Click(object sender, EventArgs e)
+        {
+            DialogResult = btnCancel.DialogResult;
+            Close();
+        }
+
+        #endregion
+
+        #region Private methods
+
+        #endregion
+
+        public event DirectoryValidateEventHandler DirectoryValidateEventHandler;
+            
+        #region Private members
+        private ITheme theme;
+        private long userNumber;
+        #endregion
+
+    }
+}

@@ -13,6 +13,7 @@ using NUnit.Framework;
 
 using MarkGravestock.SportTracks.PlugIns.PoolMatePro.Domain;
 using MarkGravestock.SportTracks.PlugIns.PoolMatePro.File;
+using MarkGravestock.SportTracks.PlugIns.PoolMatePro.Utilities;
 
 namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
 {

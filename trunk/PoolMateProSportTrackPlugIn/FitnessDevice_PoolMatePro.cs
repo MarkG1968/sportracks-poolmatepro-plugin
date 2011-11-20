@@ -12,6 +12,8 @@ using System.Windows.Forms;
 using System.ComponentModel;
 
 using MarkGravestock.SportTracks.PlugIns.PoolMatePro.File;
+using MarkGravestock.SportTracks.PlugIns.PoolMatePro.Configuration;
+using MarkGravestock.SportTracks.PlugIns.PoolMatePro.Configuration.Directory;
 
 using ZoneFiveSoftware.Common.Visuals;
 using ZoneFiveSoftware.Common.Visuals.Fitness;
@@ -27,7 +29,7 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
             this.name = "PoolMate Pro";
         	this.dialog = new DeviceConfigurationDialog();
         	
-            this.dialog.ValidateEventHandler += new ValidateEventHandler(ValidateImportDirectory);
+            this.dialog.DirectoryValidateEventHandler += new DirectoryValidateEventHandler(ValidateImportDirectory);
         }
 
         public Guid Id
@@ -73,13 +75,13 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
         
         public void ValidateImportDirectory(DirectoryValidationEvent directoryValidationEvent)
         {
-        	PoolMateProImporter importer = new PoolMateProImporter();
+        	LogFileReader logFileReader = new LogFileReader();
 			
-			importer.OpenDirectory(directoryValidationEvent.DirectoryToValidate.FullName);
+			logFileReader.OpenDirectory(directoryValidationEvent.DirectoryToValidate.FullName);
 			
-			LogFile logFile = importer.LoadLatestLogFile();
+			LogFile logFile = logFileReader.LoadLatestLogFile();
 
-			directoryValidationEvent.ValidationStatus = logFile.IsFile ? ValidationStatus.Valid : ValidationStatus.Invalid;
+			directoryValidationEvent.ValidationStatus = logFile.IsFile ? DirectoryValidationStatus.Valid : DirectoryValidationStatus.Invalid;
         }
         
 

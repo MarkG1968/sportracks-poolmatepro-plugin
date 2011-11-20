@@ -15,12 +15,12 @@ using MarkGravestock.SportTracks.PlugIns.PoolMatePro.File;
 namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
 {
 	[TestFixture]
-	public class PoolMateProImporterTest 
+	public class LogFileReaderTest 
 	{
 		[Test]
 		public void CanLoadLatestLogFile()
 		{
-			PoolMateProImporter subjectUnderTest = new PoolMateProImporter();
+			LogFileReader subjectUnderTest = new LogFileReader();
 			subjectUnderTest.OpenDirectory(TestData.TestDirectoryPath);
 			LogFile latestLogFile = subjectUnderTest.LoadLatestLogFile();
 			
@@ -30,7 +30,7 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
 		[Test]
 		public void ThrowsWithInvalidDirectory()
 		{
-			PoolMateProImporter subjectUnderTest = new PoolMateProImporter();
+			LogFileReader subjectUnderTest = new LogFileReader();
 			subjectUnderTest.OpenDirectory("WONT_EXIST");
 			
 			Assert.Throws<DirectoryNotFoundException>(delegate { subjectUnderTest.LoadLatestLogFile(); });

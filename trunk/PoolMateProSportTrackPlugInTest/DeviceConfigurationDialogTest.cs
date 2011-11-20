@@ -10,6 +10,9 @@ using System;
 using System.Windows.Forms;
 using System.ComponentModel;
 
+using MarkGravestock.SportTracks.PlugIns.PoolMatePro.Configuration;
+using MarkGravestock.SportTracks.PlugIns.PoolMatePro.Configuration.Directory;
+
 namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
 {
 	/// <summary>
@@ -27,7 +30,7 @@ namespace MarkGravestock.SportTracks.PlugIns.PoolMatePro
 		{
 			DeviceConfigurationDialog dialog = new DeviceConfigurationDialog();
 			dialog.ConfigurationInfo = DeviceConfigurationInfo.Default;
-			dialog.ValidateEventHandler  += new ValidateEventHandler(new FitnessDevice_PoolMatePro().ValidateImportDirectory);
+			dialog.DirectoryValidateEventHandler  += new DirectoryValidateEventHandler(new FitnessDevice_PoolMatePro().ValidateImportDirectory);
 			dialog.ShowDialog();
 			
 			MessageBox.Show("Device Configuration Settings: " + dialog.ConfigurationInfo, "Results", MessageBoxButtons.OK);

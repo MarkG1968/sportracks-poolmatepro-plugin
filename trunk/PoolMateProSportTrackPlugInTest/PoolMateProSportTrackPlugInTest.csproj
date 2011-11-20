@@ -8,9 +8,11 @@
     <RootNamespace>MarkGravestock.SportTracks.PlugIns.PoolMatePro</RootNamespace>
     <AssemblyName>PoolMateProSportTrackPlugInTest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <StartupObject>MarkGravestock.SportTracks.PlugIns.PoolMatePro.DeviceConfigurationDialogTest</StartupObject>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Mark Gravestock\AppData\Roaming\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -41,10 +43,14 @@
     <Reference Include="nunit.framework">
       <HintPath>Lib\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>Lib\Rhino.Mocks.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
@@ -52,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActivityCategoryFinderTest.cs" />
     <Compile Include="DeviceConfigurationDialogTest.cs" />
     <Compile Include="SwimSessionFactoryTest.cs" />
     <Compile Include="LogFileTest.cs" />
@@ -70,6 +77,7 @@
     <Folder Include="Data" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Data\Log1.csv1781149Done">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
